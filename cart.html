@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="THis is e-commerce project for noor-bazar">
+    <title>E-commerce project</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- navbar starts here -->
+  <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+  <nav id="menu" class="hidden">
+    <ul class="nav-upper flex-space-around">
+        <li class="nav_list">
+            <a href="index.html" class="nav_link">Home</a>
+        </li>
+        <li class="nav_list">
+            <a href="register.html" class="nav_link">Register</a>
+        </li>
+        <li class="nav_list">
+            <a href="login.html" class="nav_link">Log In</a>
+        </li>
+        <li class="nav_list">
+            <a href="index.html" class="nav_link">Log Out</a>
+        </li>
+        <li class="nav_list">
+            <a href="contact.html" class="nav_link">Contact</a>
+        </li>
+        <li class="nav_list">
+            <a href="profile.html" class="nav_link"><img class="profile-icon" src="./Image/profile.jpg" alt="profile pic"></a>
+        </li>
+    </ul>
+    <ul class="nav-lower flex-space-around">
+        <li class="nav_list">
+            <a href="index.html" class="nav_brand nav_link">Noor-Bazar</a>
+        </li>
+        <li class="nav_list">
+            <a href="cart.html" class="nav_link">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                Cart 2 products - $150.00
+            </a>
+        </li>
+    </ul>
+  </nav>
+  
+  <!-- navbar ends here -->
+  <main>
+    <div class="cart flex-center">
+        <div class="cart_items">
+            <div class="cart_items_heading card">
+                <h2>Cart Items: [2 items]</h2>
+                <div class="cart_items_action">
+                <label for="select">
+                    <input type="checkbox" id="select" name="select">Select all items
+                </label>
+                <button class="btn"> <i class="fas fa-trash-alt"></i> </button>
+                <button class="btn">Shop More</button>
+                </div>
+            </div>
+            <div class="cart_items card flex-space-around">
+                <input type="checkbox">
+                <img src="./Image/laptop2.jpg" alt="product1" class="cart_items_img">
+                <div class="cart_items_description">
+                    <h3 class="product_name">Sony Core i7 Laptop</h3>
+                    <h4 class="Product_price">Price: $650.00</h4>
+                    <p class="cart_items_shipping"> Shipping Cost:$2.50</p>
+                </div>
+                <div class="cart_items_action">
+                    <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                    <button class="btn"><i class="fas fa-add"></i></button>
+                    <span>1</span>
+                    <button class="btn"><i class="fas fa-minus"></i></button>
+                </div>
+            </div>
+            <div class="cart_items card flex-space-around">
+                <input type="checkbox">
+                <img src="./Image/laptop1.jpg" alt="product1" class="cart_items_img">
+                <div class="cart_items_description">
+                    <h3 class="product_name">Sony Core i5 Laptop</h3>
+                    <h4 class="Product_price">Price: $550.00</h4>
+                    <p class="cart_items_shipping"> Free Shipping</p>
+                </div>
+                <div class="cart_items_action">
+                    <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                    <button class="btn"><i class="fas fa-add"></i></button>
+                    <span>3</span>
+                    <button class="btn"><i class="fas fa-minus"></i></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="cart_payment">
+           <div class="cart_payment_summury card">
+            <h2>Payment Summury</h2>
+            <div>
+                <p>Subtotal</p>
+                <p>$650.00</p>
+            </div>
+            <div>
+                <p>Shipping Cost:</p>
+                <p>$2.50</p>
+            </div>
+            <div>
+                <p>Total Cost:</p>
+                <p>$652.50</p>
+            </div>
+            <button class="btn cart_payment_btn">Pay Now</button>
+           </div>
+           <div class="cart_payment_mood card">
+            <h2>Payment Mood</h2>
+            <div> <i class="fa-brands fa-cc-visa fa-3x"></i>
+                <i class="fa-brands fa-cc-mastercard fa-3x"></i>
+                <i class="fa-brands fa-cc-paypal fa-3x"></i>
+                <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+            </div>
+           </div>
+                
+        </div>
+    </div>
+   </main>
+
+
+<!-- footer starts here  -->
+<footer class="flex-space-around">
+    <div>
+        <label for="subscribe">Subscribe Here:</label>
+        <input type="email" id="subscribe" name="subscribe" class="footer_input" placeholder="Your Email Address">
+        <button class="btn btn_subscribe">Subscribe</button>
+
+    </div>
+    <div>&copy;Allrights reserved by Noor Bazar</div>
+</footer>
+
+
+<!-- footer ends here  -->
+<script src="./scripts/index.js"></script>
+</body>
+</html>

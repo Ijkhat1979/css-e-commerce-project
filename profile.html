@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="THis is e-commerce project for noor-bazar">
+    <title>E-commerce project</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- navbar starts here -->
+  <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+<nav id="menu" class="hidden">
+    <ul class="nav-upper flex-space-around">
+        <li class="nav_list">
+            <a href="index.html" class="nav_link">Home</a>
+        </li>
+        <li class="nav_list">
+            <a href="register.html" class="nav_link">Register</a>
+        </li>
+        <li class="nav_list">
+            <a href="login.html" class="nav_link">Log In</a>
+        </li>
+        <li class="nav_list">
+            <a href="index.html" class="nav_link">Log Out</a>
+        </li>
+        <li class="nav_list">
+            <a href="contact.html" class="nav_link">Contact</a>
+        </li>
+        <li class="nav_list">
+            <a href="profile.html" class="nav_link"><img class="profile-icon" src="./Image/profile.jpg" alt="profile pic"></a>
+        </li>
+    </ul>
+    <ul class="nav-lower flex-space-around">
+        <li class="nav_list">
+            <a href="index.html" class="nav_brand nav_link">Noor-Bazar</a>
+        </li>
+        <li class="nav_list">
+            <a href="cart.html" class="nav_link">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                Cart 2 products - $150.00
+            </a>
+        </li>
+    </ul>
+  </nav>
+  
+  <!-- navbar ends here -->
+  <main>
+    <section class="profile flex-center">
+        <h2>User Profile</h2>
+        <div class="card">
+            <img src="./Image/profile.jpg" alt="profile pic" class="profile_img img">
+            <div class="profile_info ">
+                <h3>Mohammad Ijkhat Noor</h3>
+                <p>Email:liponijkhat@gmail.com</p>
+                <p> I love to design webpages</p>
+            </div>
+            <div class="profile_info_icon">
+                <button class="btn profile_btn">
+                <i class="fas fa-edit fa-2x"></i>
+                </button>
+                <button class="btn profile_btn">
+                    <i class="fas fa-trash fa-2x"></i>
+                    </button>
+            </div>
+        </div>
+    </section>
+    
+   </main>
+
+
+<!-- footer starts here  -->
+<footer class="flex-space-around">
+    <div>
+        <label for="subscribe">Subscribe Here:</label>
+        <input type="email" id="subscribe" name="subscribe" class="footer_input" placeholder="Your Email Address">
+        <button class="btn btn_subscribe">Subscribe</button>
+
+    </div>
+    <div>&copy;Allrights reserved by Noor Bazar</div>
+</footer>
+
+
+<!-- footer ends here  -->
+
+</body>
+</html>
